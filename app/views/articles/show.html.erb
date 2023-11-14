@@ -1,0 +1,23 @@
+<div class="articles">
+  <div class="article-content">
+      <h1><%= @article.title %></h1>
+
+    <div class="article-functions">
+      <%= link_to edit_article_path do %>
+      <i class="fa-regular fa-pen-to-square"></i>
+      <% end %>
+      <%# <div class="div"> %>
+    <%= link_to article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+    <i class="fa-regular fa-trash-can"></i>
+    <% end %>
+  <%# </div> %>
+  </div>
+
+</div>
+  <hr class="hr" />
+  <%= @article.content %>
+
+</div>
+<div class="div">
+    <%= link_to "Back to list", articles_path %>
+  </div>

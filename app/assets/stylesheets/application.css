@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ .articles a {
+  text-decoration: none;
+ }
+
+ .article-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+ }
+ .article-functions {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+ }
